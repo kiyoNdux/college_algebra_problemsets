@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Algebra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <span class="logo">
+            <svg class="logo-icon" viewBox="0 0 32 32" fill="none"><rect x="4" y="4" width="24" height="24" rx="6" fill="#7ea36e"/><rect x="10" y="10" width="12" height="12" rx="3" fill="#fff"/></svg>
+            College Algebra
+        </span>
+        <button class="back-btn">Back to Main Site</button>
+    </header>
+    <main>
+        <section>
+            <div class="section-title">Semis Practice Problems</div>
+        </section>
+
+        <section>
+            <div class="category-title">📋 Systems of Linear Equations</div>
+            <div class="section-subtitle">Practice solving systems of linear equations using various methods.</div>
+            <div class="category-title" style="font-size:1.1rem;">Substitution Method</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Solve the system of equations:<br>
+                            x + 2y = 7<br>
+                            3x - y = 8
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>From the first equation, express x in terms of y: <br>x = 7 - 2y</li>
+                            <li>Substitute this expression into the second equation:<br>
+                                3(7 - 2y) - y = 8
+                            </li>
+                            <li>Simplify:<br>
+                                21 - 6y - y = 8<br>
+                                21 - 7y = 8<br>
+                                -7y = 8 - 21<br>
+                                -7y = -13<br>
+                                y = 13/7
+                            </li>
+                            <li>Substitute back to find x:<br>
+                                x = 7 - 2(13/7)<br>
+                                x = 7 - 26/7<br>
+                                x = 49/7 - 26/7<br>
+                                x = 23/7
+                            </li>
+                            <li>Therefore, the solution is <b>x = 23/7</b> and <b>y = 13/7</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Solve the system of equations:<br>
+                            2x - 3y = 1<br>
+                            4x + y = 14
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>From the second equation, express y in terms of x:<br>
+                                4x + y = 14 ⇒ y = 14 - 4x
+                            </li>
+                            <li>Substitute this into the first equation:<br>
+                                2x - 3(14 - 4x) = 1
+                            </li>
+                            <li>Simplify:<br>
+                                2x - 42 + 12x = 1<br>
+                                14x - 42 = 1<br>
+                                14x = 43<br>
+                                x = 43/14
+                            </li>
+                            <li>Substitute back to find y:<br>
+                                y = 14 - 4(43/14)<br>
+                                y = 14 - (172/14)<br>
+                                y = 196/14 - 172/14<br>
+                                y = 24/14 = 12/7
+                            </li>
+                            <li>Therefore, the solution is <b>x = 43/14</b> and <b>y = 12/7</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Elimination Method -->
+            <div class="category-title" style="font-size:1.1rem;">Elimination Method</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Solve the system of equations:<br>
+                            3x + 2y = 7<br>
+                            5x - 2y = 3
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Add the two equations to eliminate y:<br>
+                                (3x + 2y) + (5x - 2y) = 7 + 3<br>
+                                8x = 10 ⇒ x = 10/8 = 5/4
+                            </li>
+                            <li>Substitute x = 5/4 into the first equation:<br>
+                                3(5/4) + 2y = 7<br>
+                                15/4 + 2y = 7<br>
+                                2y = 7 - 15/4 = 28/4 - 15/4 = 13/4<br>
+                                y = 13/8
+                            </li>
+                            <li>Therefore, the solution is <b>x = 5/4</b> and <b>y = 13/8</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Solve the system of equations:<br>
+                            4x + 3y = 10<br>
+                            2x - 3y = 8
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Add the two equations to eliminate y:<br>
+                                (4x + 3y) + (2x - 3y) = 10 + 8<br>
+                                6x = 18 ⇒ x = 3
+                            </li>
+                            <li>Substitute x = 3 into the first equation:<br>
+                                4(3) + 3y = 10<br>
+                                12 + 3y = 10<br>
+                                3y = 10 - 12 = -2<br>
+                                y = -2/3
+                            </li>
+                            <li>Therefore, the solution is <b>x = 3</b> and <b>y = -2/3</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <!-- Graphing Method -->
+            <div class="category-title" style="font-size:1.1rem;">Graphing Method</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Use the graphing method to solve the system of equations:<br>
+                            y = 2x - 1<br>
+                            y = -x + 5
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Set the two equations equal to each other:<br>
+                                2x - 1 = -x + 5
+                            </li>
+                            <li>Solve for x:<br>
+                                2x + x = 5 + 1<br>
+                                3x = 6 ⇒ x = 2
+                            </li>
+                            <li>Substitute x = 2 into either equation to find y:<br>
+                                y = 2(2) - 1 = 4 - 1 = 3
+                            </li>
+                            <li>Therefore, the solution is <b>(2, 3)</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Use the graphing method to solve the system of equations:<br>
+                            x + y = 6<br>
+                            2x - y = 3
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>From the first equation, y = 6 - x.</li>
+                            <li>Substitute into the second equation:<br>
+                                2x - (6 - x) = 3<br>
+                                2x - 6 + x = 3<br>
+                                3x = 9 ⇒ x = 3
+                            </li>
+                            <li>Substitute x = 3 into y = 6 - x:<br>
+                                y = 6 - 3 = 3
+                            </li>
+                            <li>Therefore, the solution is <b>(3, 3)</b>.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="category-title">🟩 Matrices Basic Operations</div>
+            <div class="section-subtitle">Work with matrices through addition, scalar multiplication, and matrix multiplication.</div>
+            <div class="category-title" style="font-size:1.1rem;">Matrix Addition</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Add the following matrices:
+                            <pre class="matrix-block">
+A = [2  3]
+    [1  4]
+
+B = [5  0]
+    [2  1]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Add corresponding elements:<br>
+                                <pre class="matrix-block">
+A + B = [2+5  3+0]
+        [1+2  4+1]
+                                </pre>
+                            </li>
+                            <li>Simplify:<br>
+                                <pre class="matrix-block">
+A + B = [7  3]
+        [3  5]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[7  3]
+[3  5]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Add the following matrices:
+                            <pre class="matrix-block">
+P = [ 3 -1  2]
+    [ 0  4 -3]
+
+Q = [-2  5  1]
+    [ 4  0  2]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Add corresponding elements:<br>
+                                <pre class="matrix-block">
+P + Q = [3+(-2)  -1+5  2+1]
+        [0+4     4+0  -3+2]
+                                </pre>
+                            </li>
+                            <li>Simplify:<br>
+                                <pre class="matrix-block">
+P + Q = [1  4  3]
+        [4  4 -1]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[1  4  3]
+[4  4 -1]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="category-title" style="font-size:1.1rem;">Scalar Multiplication</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Find 3A, where:
+                            <pre class="matrix-block">
+A = [2 -1]
+    [4  0]
+    [3  5]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Multiply each entry of A by 3:<br>
+                                <pre class="matrix-block">
+3A = [3×2   3×(-1)]
+     [3×4   3×0]
+     [3×3   3×5]
+                                </pre>
+                            </li>
+                            <li>Simplify:<br>
+                                <pre class="matrix-block">
+3A = [6  -3]
+     [12  0]
+     [9  15]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[6  -3]
+[12  0]
+[9  15]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Find -2B, where:
+                            <pre class="matrix-block">
+B = [5  3 -1]
+    [2 -4  0]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Multiply each entry of B by -2:<br>
+                                <pre class="matrix-block">
+-2B = [-2×5   -2×3   -2×(-1)]
+      [-2×2   -2×(-4)  -2×0]
+                                </pre>
+                            </li>
+                            <li>Simplify:<br>
+                                <pre class="matrix-block">
+-2B = [-10  -6   2]
+      [-4    8   0]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[-10  -6   2]
+[-4    8   0]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="category-title" style="font-size:1.1rem;">Matrix Multiplication</div>
+            <div class="problems-list">
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 1</div>
+                        <div class="problem-content">
+                            Find the product AB, where:
+                            <pre class="matrix-block">
+A = [2  3]
+    [1  4]
+
+B = [5  1]
+    [2  6]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Multiply A and B using the definition of matrix multiplication:<br>
+                                <pre class="matrix-block">
+AB = [2×5 + 3×2   2×1 + 3×6]
+     [1×5 + 4×2   1×1 + 4×6]
+                                </pre>
+                            </li>
+                            <li>Simplify each entry:<br>
+                                <pre class="matrix-block">
+AB = [10 + 6    2 + 18]
+     [5 + 8     1 + 24]
+AB = [16   20]
+     [13   25]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[16  20]
+[13  25]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="problem-card">
+                    <div>
+                        <div class="problem-label">Problem 2</div>
+                        <div class="problem-content">
+                            Find the product PQ, where:
+                            <pre class="matrix-block">
+P = [3  1  2]
+    [0  2  1]
+
+Q = [1]
+    [4]
+    [2]
+                            </pre>
+                        </div>
+                    </div>
+                    <button class="show-btn" onclick="toggleSolution(this)">Show Solution</button>
+                    <div class="solution-content" style="display:none; background:#faf9f6; border-radius:8px; margin-top:10px; padding:16px; border:1px solid #ecebe5;">
+                        <b>Solution:</b>
+                        <ol style="margin-top:8px;">
+                            <li>Multiply P and Q (result is a 2×1 matrix):<br>
+                                <pre class="matrix-block">
+PQ = [3×1 + 1×4 + 2×2]
+     [0×1 + 2×4 + 1×2]
+                                </pre>
+                            </li>
+                            <li>Simplify each entry:<br>
+                                <pre class="matrix-block">
+PQ = [3 + 4 + 4]
+     [0 + 8 + 2]
+PQ = [11]
+     [10]
+                                </pre>
+                            </li>
+                            <li>Therefore, the answer is
+                                <b>
+                                    <pre class="matrix-block" style="display:inline-block; margin:0;">
+[11]
+[10]
+                                    </pre>
+                                </b>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- End of Matrices Basic Operations section -->
+
+        <script src="script.js"></script>
+</body>
+</html>
