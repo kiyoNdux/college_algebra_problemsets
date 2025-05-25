@@ -1,12 +1,12 @@
 body {
-        background: #f5f1e7;
-        font-family: 'Segoe UI', Arial, sans-serif;
+        background: #f3efe3;
+        font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
         margin: 0;
         padding: 0;
     }
     header {
         background: #fff;
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 1px solid #d2d2d2;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -20,7 +20,7 @@ body {
         align-items: center;
         font-size: 1.3rem;
         font-weight: 600;
-        color: #4d6a3d;
+        color: #38613a;
     }
     .logo-icon {
         width: 28px;
@@ -28,7 +28,7 @@ body {
         margin-right: 10px;
     }
     .back-btn {
-        background: #7ea36e;
+        background: #4e8c5a;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -38,7 +38,7 @@ body {
         transition: background 0.2s;
     }
     .back-btn:hover {
-        background: #5e8c4a;
+        background: #38613a;
     }
     main {
         max-width: 900px;
@@ -51,19 +51,19 @@ body {
     .section-title {
         font-size: 2.2rem;
         font-weight: 700;
-        color: #6b4f2c;
+        color: #3d2c1a;
         margin-bottom: 10px;
         letter-spacing: 1px;
     }
     .section-subtitle {
         font-size: 1.2rem;
-        color: #7d7d7d;
+        color: #5a5a5a;
         margin-bottom: 24px;
     }
     .category-title {
         font-size: 1.3rem;
         font-weight: 600;
-        color: #4d6a3d;
+        color: #38613a;
         margin: 32px 0 10px 0;
     }
     .problems-list {
@@ -74,7 +74,7 @@ body {
     .problem-card {
         background: #fff;
         border-radius: 10px;
-        box-shadow: 0 2px 8px #0001;
+        box-shadow: 0 2px 8px #0002;
         padding: 18px 24px 18px 24px;
         display: flex;
         align-items: flex-start;
@@ -82,11 +82,11 @@ body {
         transition: box-shadow 0.2s;
     }
     .problem-card:hover {
-        box-shadow: 0 4px 16px #0002;
+        box-shadow: 0 4px 16px #0003;
     }
     .problem-label {
-        background: #f5f1e7;
-        color: #7d7d7d;
+        background: #e9e5d8;
+        color: #38613a;
         border-radius: 6px;
         font-size: 0.95rem;
         font-weight: 600;
@@ -96,12 +96,12 @@ body {
     }
     .problem-content {
         font-size: 1.1rem;
-        color: #3d3d3d;
+        color: #2a2a2a;
         margin-bottom: 2px;
     }
     .show-btn {
-        background: #f5f1e7;
-        color: #b6a98a;
+        background: #e9e5d8;
+        color: #38613a;
         border: none;
         border-radius: 6px;
         padding: 8px 16px;
@@ -110,30 +110,36 @@ body {
         cursor: pointer;
         transition: background 0.2s, color 0.2s;
         outline: none;
+        box-shadow: 0 1px 2px #0001;
     }
     .show-btn.active,
     .show-btn[aria-expanded="true"] {
-        background: #4e8c5a;
+        background: #38613a;
         color: #fff;
     }
     .show-btn:hover {
-        background: #e6e0d0;
-        color: #4d6a3d;
+        background: #c8c2b0;
+        color: #2a2a2a;
     }
     footer {
         text-align: center;
-        color: #b6a98a;
+        color: #7d7d7d;
         font-size: 1rem;
         padding: 32px 0 18px 0;
     }
     .math-block, .matrix-block {
-        font-family: 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
+        font-family: 'JetBrains Mono', 'Fira Mono', 'Consolas', 'Menlo', 'Monaco', monospace;
         font-size: 1.08rem;
-        background: none;
-        color: #7d7d7d;
+        background: #f7f6f2;
+        color: #2a2a2a;
         display: block;
         margin: 8px 0 0 0;
         white-space: pre;
+        border-radius: 4px;
+        padding: 2px 6px;
+    }
+    .solution-content {
+        color: #222;
     }
     /* Responsive */
     @media (max-width: 600px) {
